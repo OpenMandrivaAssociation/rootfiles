@@ -9,6 +9,7 @@ Summary:	The basic required files for the root user's directory
 License:	Public Domain
 Group:		System/Base
 Source:		%name-%version.tar.bz2
+BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildArch:	noarch
 
 %description
