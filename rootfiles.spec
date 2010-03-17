@@ -1,6 +1,6 @@
 %define name	rootfiles
 %define version 11.0
-%define release %mkrel 4
+%define release %mkrel 5
 
 Name:		%{name}
 Version:	%{version}
