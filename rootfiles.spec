@@ -1,7 +1,7 @@
 Summary:	The basic required files for the root user's directory
 Name:		rootfiles
 Version:	11.0
-Release:	19
+Release:	20
 License:	Public Domain
 Group:		System/Base
 Source0:	%{name}-%{version}.tar.bz2
