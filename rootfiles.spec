@@ -1,7 +1,7 @@
 Summary:	The basic required files for the root user's directory
 Name:		rootfiles
 Version:	11.0
-Release:	21
+Release:	22
 License:	Public Domain
 Group:		System/Base
 Source0:	%{name}-%{version}.tar.bz2
@@ -12,11 +12,11 @@ The rootfiles package contains basic required files that are placed
 in the root user's account.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %install
 install -d %{buildroot}/root
-%makeinstall_std
+%make_install
 
 %files
 %doc ChangeLog 
