@@ -1,0 +1,35 @@
+diff -up rootfiles-11.0/bashrc.omv~ rootfiles-11.0/bashrc
+--- rootfiles-11.0/bashrc.omv~	2022-12-13 13:14:45.232471565 +0100
++++ rootfiles-11.0/bashrc	2022-12-13 13:15:14.784679629 +0100
+@@ -1,6 +1,6 @@
+ # .bashrc
+ 
+-PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin
++PATH=/usr/bin:/usr/local/bin:/usr/local/sbin
+ ENV=$HOME/.bashrc
+ USERNAME="root"
+ export USERNAME ENV PATH
+diff -up rootfiles-11.0/cshrc.omv~ rootfiles-11.0/cshrc
+--- rootfiles-11.0/cshrc.omv~	2022-12-13 13:15:32.094801549 +0100
++++ rootfiles-11.0/cshrc	2022-12-13 13:16:49.843349544 +0100
+@@ -6,8 +6,5 @@ alias rm 'rm -i'
+ alias cp 'cp -i'
+ alias mv 'mv -i'
+ 
+-#
+-alias df 'df -x supermount'
+-
+-setenv PATH="/sbin:/usr/sbin:/bin:/usr/bin:/usr/X11R6/bin"
++setenv PATH="/usr/bin:/usr/local/sbin:/usr/local/bin"
+ set prompt=\[`id -nu`@`hostname -s`\]\#\ 
+diff -up rootfiles-11.0/tcshrc.omv~ rootfiles-11.0/tcshrc
+--- rootfiles-11.0/tcshrc.omv~	2022-12-13 13:16:03.549023172 +0100
++++ rootfiles-11.0/tcshrc	2022-12-13 13:16:58.561411028 +0100
+@@ -6,6 +6,6 @@ alias rm 'rm -i'
+ alias cp 'cp -i'
+ alias mv 'mv -i'
+ 
+-setenv PATH "/sbin:/usr/sbin:/bin:/usr/bin:/usr/X11R6/bin"
++setenv PATH "/usr/bin:/usr/local/sbin:/usr/local/bin"
+ 
+ set prompt='[%n@%m %c]# ' 

@@ -1,10 +1,11 @@
 Summary:	The basic required files for the root user's directory
 Name:		rootfiles
 Version:	11.0
-Release:	22
+Release:	23
 License:	Public Domain
 Group:		System/Base
 Source0:	%{name}-%{version}.tar.bz2
+Patch0:		rootfiles-11.0-cleanup.patch
 BuildArch:	noarch
 
 %description
